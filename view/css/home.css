@@ -15,8 +15,9 @@
   }
   #nav_brand{
     color: rgb(27, 29, 28);
+    font-size: 21px;
     font-family: "Audiowide", sans-serif;
-font-size: 30px;
+
 text-shadow: 3px 3px 3px #615f5f;
   }
   #nav_brand:hover{
@@ -36,4 +37,15 @@ text-shadow: 3px 3px 3px #615f5f;
 
 .des-1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+      .nav-link{
+        font-size: 14px;
+      }
+     #nav_brand{
+        font-size: 15px;
+     }
 }
