@@ -1,0 +1,39 @@
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .nav-link:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px rgb(60, 57, 57);
+  }
+
+
+  .box {
+    background-color: aquamarine;
+    height: 30px;
+  }
+  #nav_brand{
+    color: rgb(27, 29, 28);
+    font-family: "Audiowide", sans-serif;
+font-size: 30px;
+text-shadow: 3px 3px 3px #615f5f;
+  }
+  #nav_brand:hover{
+    color: aliceblue;
+  }
+
+.caro1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.caro2{
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
+
+.des-1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

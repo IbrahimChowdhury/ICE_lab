@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="./css/home.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+
+    <nav class="navbar navbar-expand navbar-light bg-black bg-opacity-50">
+      <div class="container  justify-content-between  ">
+        <div class="">
+          <a class="navbar-brand fs-5" id="nav_brand"   href="#">ICE Innovation Lab</a>
+        </div>
+
+        <div>
+          <ul class="navbar-nav  me-auto mt-2 mt-lg-0 fs-5  fw-semibold " >
+            <li class="nav-item"  >
+              <a class="nav-link" href="/" >Home</a>
+            </li>
+
+            <li class="nav-item">
+              <!-- modal start -->
+              <!--  Modal trigger button  -->
+              <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalId_register">
+                Register
+              </a>
+
+              <!-- Modal Body  for Register-->
+
+              <form action="/register" method="post">
+
+                <div class="modal fade" id="modalId_register" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title " id="modalTitleId">Register </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <!-- form input start -->
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="name">
+                            <label for="name">Enter Your name</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="name">
+                            <label for="email">Enter Email</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control" name="password" id="password"
+                              placeholder="password">
+                            <label for="password">Enter password</label>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- toast start -->
+
+                        <input type="submit" value="submit" class="btn btn-primary" id="liveToastBtn">
+                        <!-- toast end -->
+                      </div>
+                      <!-- form input end -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--modal end  -->
+            </li>
+
+            <li class="nav-item">
+              <!-- modal start -->
+              <!--  Modal trigger button  -->
+              <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalId_login">
+               Login
+              </a>
+
+              <!-- Modal Body for Login-->
+
+              <form action="/login" method="post">
+
+                <div class="modal fade" id="modalId_login" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title " id="modalTitleId">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <!-- form input start -->
+                         
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="name">
+                            <label for="email">Enter Email</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control" name="password" id="password"
+                              placeholder="password">
+                            <label for="password">Enter password</label>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- toast start -->
+
+                        <input type="submit" value="login" class="btn btn-primary" id="liveToastBtn">
+                        <!-- toast end -->
+                      </div>
+                      <!-- form input end -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--modal end  -->
+              
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- use carosel -->
+  
+<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+  </ol>
+  <div class="carousel-inner justify-content-center" role="listbox">
+    <div class="carousel-item active">
+      <img src="./image/lab2.png" height="70%" class="w-100  d-block" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="caro1">ICE Innovation lab</h3>
+        <p class="caro2">Project building </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./image/lab3.png" class="w-100 d-block" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="caro1">Working Place</h3>
+        <p class="caro2">Where we work together</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./image/lab4.png" class="w-100 d-block" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="caro1" id="h1">IOT Instruments</h3>
+        <p class="caro2">By which we can build a Iot device</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- carosel end -->
+
+
+<!-- Description start -->
+<div class="container mt-5 ">
+  <h3>What Is IOT</h3>
+  <p class="ps-5 ms-md-5 mb-5  des-1">The internet of things, or IoT, is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers (UIDs) and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.
+
+    A thing in the internet of things can be a person with a heart monitor implant, a farm animal with a biochip transponder, an automobile that has built-in sensors to alert the driver when tire pressure is low or any other natural or man-made object that can be assigned an Internet Protocol (IP) address and is able to transfer data over a network.
+    
+    Increasingly, organizations in a variety of industries are using IoT to operate more efficiently, better understand customers to deliver enhanced customer service, improve decision-making and increase the value of the business.</p>
+
+    <h3>How does a IOT work</h3>
+    <p class="ps-5 ms-md-5 mb-5 des-1">An IoT ecosystem consists of web-enabled smart devices that use embedded systems, such as processors, sensors and communication hardware, to collect, send and act on data they acquire from their environments. IoT devices share the sensor data they collect by connecting to an IoT gateway or other edge device where data is either sent to the cloud to be analyzed or analyzed locally. Sometimes, these devices communicate with other related devices and act on the information they get from one another. The devices do most of the work without human intervention, although people can interact with the devices -- for instance, to set them up, give them instructions or access the data.</p>
+</div>
+<!-- Description end -->
+
+
+
+<!-- pricing start -->
+<div class="container mt-5 ">
+  <div class="text-center m-5" >
+    <h1 >Want to learn IOT?</h1>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Learn Arduino </h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">4000taka<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>20 classes</li>
+            <li>14 projcts</li>
+            <li>Hand to hand working</li>
+            <li>Practical experiences</li>
+          </ul>
+          <button type="button"  class="w-100 btn btn-lg btn-outline-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Arduino and NodeMcu</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">8000Taka<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>40 classes</li>
+            <li>30 projects</li>
+            <li>Arduino and nodeMcu collaboration</li>
+            <li>Practical experiencing</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">Full Iot Developer</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">10000taka<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>80 Classes</li>
+            <li>50 projects</li>
+            <li>Full Iot learning </li>
+            <li>Practical experinces</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pricing end -->
+  </main>
+  <footer>
+    <!-- place footer here -->
+    
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Lab_Facility</a></li>
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2023, ICE Innovation Lab </p>
+  </footer>
+</div>
+  </footer>
+<!-- footer end  -->
+
+  <!-- javascript  -->
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+
+
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
+</body>
+
+</html>
